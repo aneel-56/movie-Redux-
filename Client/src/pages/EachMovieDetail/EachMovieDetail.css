@@ -1,0 +1,281 @@
+.movie-detail {
+  margin: 1em;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Movie Backdrop  */
+
+.movie-detail-backdrop {
+  margin-top: 3em;
+  /* border: 1px solid red; */
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.mobile-movie-detail-backdrop {
+}
+
+.movie-detail-backdrop img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.each-movie-upper-backdrop {
+  /* border: 1px solid green; */
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, #08101d, rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+.each-movie-right-backdrop {
+  /* border: 1px solid green; */
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0), #08101d);
+  z-index: 1;
+}
+
+.each-movie-lower-backdrop {
+  /* border: 1px solid green; */
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), #08101d);
+  z-index: 1;
+}
+
+.each-movie-left-backdrop {
+  /* border: 1px solid green; */
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #08101d, rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+@media screen and (min-width: 700px) {
+  .movie-detail-backdrop img {
+    height: 700px;
+  }
+  .mobile-movie-detail-backdrop {
+    display: none;
+  }
+}
+
+/* Each Movie Data  */
+.each-movie-data {
+  display: grid;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  align-content: center;
+  align-items: center;
+  color: white;
+  grid-template-columns: 1fr;
+  max-width: 950px;
+  /* border: 1px solid red; */
+}
+
+.each-movie-data div:nth-child(1) img {
+  width: 100%;
+  border-radius: 1em;
+  object-fit: cover;
+  height: 100%;
+}
+
+.each-movie-data-details {
+  height: 100%;
+  /* border: 1px solid red; */
+}
+
+.each-movie-data-details > * {
+  margin-block: 18px;
+}
+
+.each-movie-data-details span {
+  opacity: 0.8;
+}
+
+.each-movie-data-details p {
+  opacity: 0.9;
+  line-height: 1.7;
+}
+
+.each-movie-data-details h1:nth-child(1) {
+  font-size: 1.6rem;
+}
+
+.each-movie-data-details > p:nth-child(2) {
+  font-style: italic;
+}
+
+.each-movie-data-details div:nth-child(3) span {
+  background-color: #da2f68;
+  color: white;
+  padding: 0.1em;
+}
+
+.each-movie-data-details-stats {
+}
+
+.each-movie-data-add-favourite {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 0.1em 0.1em 0.1em 0.1em;
+}
+
+.each-movie-data-add-favourite i {
+  font-size: 2rem;
+  color: red;
+  /* border-radius: 50%; */
+}
+
+.each-movie-data-details-status {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.4em;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  padding-block: 1em;
+}
+
+.each-movie-data-details-status h3 {
+  font-size: 0.9rem;
+}
+
+.each-movie-data-details-overview h3 {
+  margin-bottom: 0.5em;
+}
+
+.each-movie-data-details-status ~ div {
+  border-bottom: 1px solid grey;
+}
+
+.each-movie-data-details-status ~ div h3 {
+  font-size: 0.9rem;
+  padding-block: 1em;
+}
+
+.each-movie-data-details-stats {
+  display: flex;
+  justify-content: start;
+  gap: 1em;
+  align-items: center;
+}
+
+.circular-progress-bar {
+  width: 70px;
+}
+
+.watch-trailer {
+  background: inherit;
+  color: white;
+  display: flex;
+  border: none;
+  cursor: pointer;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Top Cast  */
+.top-cast {
+  position: relative;
+  z-index: 2;
+  border: 1px solid rebeccapurple;
+  margin-top: 4em;
+  text-align: center;
+}
+
+.top-cast img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.top-cast h2 {
+  font-size: 1.2rem;
+}
+
+.top-cast h3 {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* Official Videos  */
+.each-movie-official-videos {
+  width: 100%;
+  margin-block: 0.9em;
+  /* padding: 0.5em; */
+}
+
+.each-movie-official-videos h2 {
+  font-size: 2rem;
+  margin-block: 2em em;
+}
+
+.all-official-videos {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1.2em;
+  gap: 1em;
+  width: 100%;
+}
+
+.each-video {
+  height: 400px;
+}
+
+/* Similar Videos  */
+.movie-details-similar,
+.movie-detail-recommendation {
+  color: white;
+  margin-block: 2.5em 1.2em;
+}
+
+.movie-detail-recommendation h1,
+.movie-details-similar h1 {
+  margin-bottom: 0.6em;
+}
+
+@media screen and (min-width: 700px) {
+  .each-movie-data {
+    gap: 5em;
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .all-official-videos {
+    display: block;
+    /* gap: 2em;
+    grid-template-columns: 1fr 1fr; */
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .all-official-videos {
+    display: block;
+    /* gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr; */
+  }
+}

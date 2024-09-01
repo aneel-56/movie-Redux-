@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --bg-app: #08101d;
+  --black: #04152d;
+  --black2: #041226;
+  --black3: #020c1b;
+  --black-lighter: #1c4b91;
+  --black-light: #173d77;
+  --pink: #da2f68;
+  --orange: #f89e00;
+  --gradient: linear-gradient(98.37deg, #f89e00 0.99%, #da2f68 100%);
+  --primary-title: #cad2d7;
+  --secondary-title: #5c6575;
+}
+
+/* Utiltiy Classes  */
+.primary-title {
+  color: #cad2d7;
+}
+
+.secondary-title {
+  color: #5c6575;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  background: var(--bg-app);
+}
+
+img {
+  object-fit: cover;
+}
+
+/* Movies and TV-Shows  */

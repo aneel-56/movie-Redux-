@@ -1,0 +1,118 @@
+.register {
+    /* display: grid; */
+    /* width: 100%; */
+    background: #f8f8f8;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 250px 1fr; */
+    height: 100%;
+}
+
+.register-hero {
+    height: 250px;
+    margin: 0 !important;
+    position: relative;
+    background: linear-gradient(45deg, #f5861f,#f55a1f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 30% 40%;
+}
+
+.register div:nth-child(1) img {
+    /* filter: blur(0px); */
+    filter: grayscale(90%);
+    width: 100px;
+}
+
+.register > div:nth-child(1) h2 {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    color: white;
+}
+
+.register > div:nth-child(2) {
+    margin: 0;
+}
+
+.register form {
+    padding: 0em 0.3em 1em 0.3em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.register div {
+    margin-top: 0.8em;
+}
+
+.register-form-div {
+    margin-block: 0.5em;
+    margin-inline: auto;
+    width: 80%;
+    background: white;
+    border-radius: 1em;
+    text-align: left;
+    padding: 0.5em 0.8em;
+}
+
+.register input {
+    margin-left: 1em;
+    border: none;
+    width: 70%;
+}
+
+.register input::placeholder {
+    opacity: 0.8;
+}
+
+.register input:focus {
+    outline: none;
+}
+
+.register button {
+    cursor: pointer;
+    margin-top: 0.8em;
+    background: linear-gradient(45deg, #f5861f,#f55a1f);
+    border: none;
+    color: white;
+    width: 80%;
+    padding: 0.8em;
+    border-radius: 1.5em;
+}
+
+.register p {
+    opacity: 0.9;
+}
+
+.register i {
+    margin-right: 3px;
+}
+
+.register a {
+    color: #f55a1f;
+}
+
+@media screen and (min-width: 700px) {
+    .register {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: calc(100dvh - 0px);
+    }
+
+    .register > div:nth-child(1) {
+        width: 100%;
+        height: 100%;
+        /* top: -30px; */
+    }
+
+    .register > div:nth-child(1) h2 {
+        font-size: 2rem;
+        bottom: 30px;
+        right: 20px;
+    }
+
+    .register-forms {
+        place-self: center;
+    }
+}
+

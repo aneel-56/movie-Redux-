@@ -1,0 +1,206 @@
+/* Hero */
+
+.hero {
+    position: relative;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upper-opacity-layer {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    background: linear-gradient(
+        180deg,
+        #08101d,
+        rgba(0,0,0,0)
+    );
+    left: 0;
+    right: 0;
+}
+
+.right-opacity-layer {
+    width: 150px;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(
+        270deg,
+        #08101d,
+
+        rgba(4, 21, 45, 0)
+        );
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    }
+    
+.lower-opacity-layer {
+    width: 100%;
+    z-index: 2;
+    height: 150px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(4, 21, 45, 0),
+        #08101d
+        );
+        position: absolute;
+        bottom: 0;
+        left: 0;
+}
+        
+.left-opacity-layer {
+    width: 150px;
+    z-index: 2;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        #08101d,
+        rgba(4, 21, 45, 0)
+    );
+    position: absolute;
+    left: 0;
+    /* top: 0; */
+    bottom: 0;
+}
+
+.hero-bg {
+    text-align: center;
+    width: 100%;
+    height: 450px;
+    opacity: 0.5;
+    position: absolute;
+    /* border: 1px solid red; */
+    top: 0;
+    left: 0;
+}
+
+.hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-form {
+    padding: 1em;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: white;
+}
+
+.hero-form > * {
+    margin-block: 20px;
+}
+
+.hero-form h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 800px) {
+    .hero-form h1 {
+        font-size: 4rem;
+    }
+}
+
+.hero-form p {
+    text-wrap: balance;
+    line-height: 1.5;
+}
+
+.hero-form div {
+    background: white;
+    margin-inline: auto;
+    border: none;
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
+    display: grid;
+    grid-template-columns: 1fr 90px;
+    border-radius: 2em;
+}
+
+.hero-form input {
+    width: 100%;
+    border: none;
+    border-bottom-left-radius: inherit;
+    border-top-left-radius: inherit;
+    padding-left: 1.5em;
+    font-size: 1.0rem;
+}
+
+.hero-form input:focus {
+    outline: none
+}
+
+.hero-form a {
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+    padding: 0.7em 1.2em;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(90deg, #f89e00, #da2f68);
+}
+
+/* Trending  */
+
+
+.trending, .popular {
+    margin-top: 1em;
+    padding: 0.5em;
+}
+
+.trending {
+    margin-top: 3em;
+}
+
+.trending-heading, .popular-heading {
+    display: flex;
+    background: inherit;
+    justify-content: space-between;
+    padding-inline: min(3vw, 35px);
+}
+
+.trending-heading h1, .popular-heading h1 {
+    font-size: min(7vw, 2em);
+}
+
+.trending-heading > div, .popular-heading > div {
+    max-height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0px;
+    
+    border-radius: 40px;
+}
+
+.trending-heading > div > button, .popular-heading > div > button {
+    cursor: pointer;
+    border: none;
+    padding-inline: 3vw;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: inherit;
+    /* border: 1px solid red; */
+}
+
+/* Popular  */
+
+/* Utitily Classes */
+.clicked-button {
+    color: white;
+    background: linear-gradient(90deg, #f89e00, #da2f68);
+}
+
+.not-clicked-button {
+    color: red;
+    background: white;
+}

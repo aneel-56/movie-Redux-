@@ -1,0 +1,84 @@
+.movies {
+    padding: 1em;
+}
+
+.movies h2 {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.movies-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.movies-heading > div {
+    width: 100%;
+}
+
+.movies-heading div:nth-child(2), .movies-heading div:nth-child(3) {
+    display: grid;
+    background: #163865;
+    grid-template-columns: 1fr 50px;
+    padding: 0.2em 1em;
+    border-radius: 2em;
+}
+
+
+.movies-heading h3 {
+    font-weight: 400;
+    font-size: min(1em, 5vw);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.movies-heading select {
+    border-radius: 1em;
+    padding: 0.3em 2em;
+    background: inherit;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.movies-button {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.movies-button button {
+    padding: 0.8em 1.3em;
+    border: 1px solid grey;
+    color: white;
+    border-radius: 0.9em;
+    margin-inline: 1em;
+    cursor: pointer;
+    background: inherit;
+}
+
+
+@media screen and (min-width: 700px) {
+    .movies-heading {
+        flex-direction: row;
+    }
+
+    .movies-heading h2 {
+        white-space: nowrap;
+        font-size: 2rem;
+    }
+
+    .movies-heading h3 {
+        white-space: nowrap;
+    }
+
+    .movies-heading div:nth-child(2) {
+        flex-basis: 13em;
+        margin-left: auto;
+    }
+
+    .movies-heading div:nth-child(3) {
+        flex-basis: 13em;
+    }
+}

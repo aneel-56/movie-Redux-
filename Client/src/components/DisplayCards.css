@@ -1,0 +1,121 @@
+.movies,
+.profile-favourites,
+.search {
+  container-type: inline-size;
+}
+
+/* Swiper Not Included  */
+.swiper-not-included {
+  margin-top: 1em;
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0.5em;
+  gap: 1.5em;
+}
+
+.swiper-not-included > * {
+  border: 1px soli;
+}
+
+.swiper-not-included a {
+  padding: 0.5em;
+  position: relative;
+}
+
+.swiper-not-included img {
+  width: 100%;
+  height: 400px;
+  border-radius: 1em;
+}
+
+.each-card-favorite {
+  position: absolute;
+  background: white;
+  /* border: 1px solid red; */
+  border-radius: 50%;
+  padding: 0.5em 0.4em 0.2em 0.4em;
+  right: 10px;
+  top: 10px;
+}
+
+.each-card-favorite i {
+  font-size: 1.3rem;
+  /* border-radius: 50%; */
+}
+
+.each-card-stats {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  padding-inline: 0.2em;
+  bottom: 45px;
+  left: 0px;
+  width: 100%;
+  height: 42px;
+}
+
+.rating-bar {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 19px;
+  background: white;
+  color: black;
+}
+
+.genres-name {
+  width: fit-content;
+  text-align: right;
+  margin-left: auto;
+  /* align-self: center; */
+}
+
+/* @media screen and (min-width: 500px) {
+  .swiper-not-included {
+    grid-template-columns: 1fr 1fr;
+  }
+} */
+
+@container (min-width: 500px) {
+  .swiper-not-included {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* @media screen and (min-width: 700px) {
+  .swiper-not-included {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+} */
+
+@container ( min-width: 700px ) {
+  .swiper-not-included {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* @media screen and (min-width: 900px) {
+  .swiper-not-included {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+} */
+
+@container (min-width: 900px) {
+  .swiper-not-included {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* @media screen and (min-width: 1100px) {
+  .swiper-not-included {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+} */
+
+@container ( min-width: 1100px ) {
+  .swiper-not-included {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,30 @@
+.loading {
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(-90deg);
+    color: red;
+  }
+  to {
+    transform: rotate(370deg);
+    color: green;
+    border-color: green;
+  }
+}
+
+.loading h1 {
+  font-size: 3rem;
+  padding: 2em;
+  border: 10px dotted red;
+  border-radius: 50%;
+  width: fit-content;
+  animation-name: loading;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
